@@ -10,12 +10,10 @@ spec:
       static_publish_path: .xyd/build/client
       routes:
         - path: /
-          preserve_path: false
           redirect:
             status_code: 301
             destination: /introduction/
         - path: /index.html
-          preserve_path: false
           redirect:
             status_code: 301
             destination: /introduction/
