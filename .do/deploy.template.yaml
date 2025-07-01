@@ -8,12 +8,3 @@ spec:
         branch: main
       build_command: bunx @xyd-js/cli build
       static_publish_path: .xyd/build/client
-      routes:
-        - path: /
-          redirect:
-            status_code: 301
-            destination: /introduction/
-        - path: /index.html
-          redirect:
-            status_code: 301
-            destination: /introduction/
