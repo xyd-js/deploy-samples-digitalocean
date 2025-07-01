@@ -1,0 +1,22 @@
+spec:
+  name: xyd-app
+  services:
+    - name: web
+      environment_slug: static-site
+      github:
+        repo: xyd-js/deploy-samples
+        branch: main
+      build_command: bunx @xyd-js/cli build
+      source_dir: /digitalocean
+      output_dir: .xyd/build/client
+      routes:
+        - path: /
+          preserve_path: false
+          redirect:
+            status_code: 301
+            destination: /introduction/
+        - path: /index.html
+          preserve_path: false
+          redirect:
+            status_code: 301
+            destination: /introduction/
