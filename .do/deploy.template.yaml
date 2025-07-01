@@ -1,10 +1,6 @@
 spec:
-  name: xyd-app
-  services:
-    - name: web
-      environment_slug: static-site
-      github:
-        repo: xyd-js/deploy-samples
-        branch: main
-      build_command: bunx @xyd-js/cli build
-      static_publish_path: .xyd/build/client
+ name: xyd-app
+ static_sites:
+ - name: docs-html
+   build_command: bunx @xyd-js/cli build
+   output_dir: .xyd/build/client
