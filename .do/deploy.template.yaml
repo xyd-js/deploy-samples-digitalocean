@@ -7,8 +7,7 @@ spec:
         repo: xyd-js/deploy-samples
         branch: main
       build_command: bunx @xyd-js/cli build
-      source_dir: /digitalocean
-      output_dir: .xyd/build/client
+      static_publish_path: .xyd/build/client
       routes:
         - path: /
           preserve_path: false
