@@ -1,5 +1,5 @@
 spec:
- name: xyd-app
+ name: xyd-digitalocean
  static_sites:
  - name: xyd-digitalocean
    git:
