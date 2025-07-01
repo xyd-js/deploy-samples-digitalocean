@@ -1,7 +1,7 @@
 spec:
  name: xyd-app
  static_sites:
- - name: xyd starter
+ - name: xyd-digitalocean
    git:
      repo_clone_url: https://github.com/xyd-js/deploy-samples-digitalocean.git
      branch: master
