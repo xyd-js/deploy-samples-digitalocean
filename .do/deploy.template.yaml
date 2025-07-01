@@ -2,5 +2,8 @@ spec:
  name: xyd-app
  static_sites:
  - name: docs-html
+   git:
+     repo_clone_url: https://github.com/xyd-js/deploy-samples-digitalocean.git
+     branch: master
    build_command: bunx @xyd-js/cli build
    output_dir: .xyd/build/client
